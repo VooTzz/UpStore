@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upstore - Upgrade Premium APK Terpercaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        accent: '#F59E0B'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #10B981 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .feature-icon {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">
+                            <i class="fas fa-rocket mr-2"></i>Upstore
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#products" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-box mr-1"></i>Produk
+                        </a>
+                        <a href="#history" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-history mr-1"></i>Riwayat
+                        </a>
+                        <a href="#transactions" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-receipt mr-1"></i>Transaksi
+                        </a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-phone mr-1"></i>Kontak
+                        </a>
+                        <a href="#about" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-info-circle mr-1"></i>Tentang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-700" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                    <a href="#products" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
+                        <i class="fas fa-box mr-2"></i>Produk
+                    </a>
+                    <a href="#history" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
+                        <i class="fas fa-history mr-2"></i>Riwayat
+                    </a>
+                    <a href="#transactions" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
+                        <i class="fas fa-receipt mr-2"></i>Transaksi
+                    </a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
+                        <i class="fas fa-phone mr-2"></i>Kontak
+                    </a>
+                    <a href="#about" class="text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">
+                        <i class="fas fa-info-circle mr-2"></i>Tentang
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                    Upgrade Premium<br>Aplikasi Favorit Anda
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    Nikmati fitur premium tanpa batas dengan layanan upgrade terpercaya
+                </p>
+                
+                <!-- Login/Register Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button onclick="window.location.href='login.html'" 
+                            class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-sign-in-alt mr-2"></i>Login
+                    </button>
+                    <button onclick="window.location.href='register.html'" 
+                            class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-user-plus mr-2"></i>Daftar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Mengapa Memilih Upstore?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Layanan upgrade premium terbaik dengan berbagai keunggulan untuk pengalaman terbaik Anda
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center card-hover p-6 rounded-xl bg-gray-50">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Proses Otomatis</h3>
+                    <p class="text-gray-600">Upgrade premium secara otomatis setelah pembayaran berhasil tanpa perlu konfirmasi manual</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center card-hover p-6 rounded-xl bg-gray-50">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Aman & Terpercaya</h3>
+                    <p class="text-gray-600">Sistem pembayaran yang aman dengan berbagai metode pembayaran terpercaya</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center card-hover p-6 rounded-xl bg-gray-50">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Support 24/7</h3>
+                    <p class="text-gray-600">Tim support siap membantu Anda kapan saja dengan respon yang cepat dan ramah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products Preview -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Produk Populer
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Pilihan aplikasi premium terpopuler yang tersedia
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                        <i class="fas fa-music text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Spotify Premium</h3>
+                        <p class="text-gray-600 mb-4">Nikmati musik tanpa iklan dan fitur premium lainnya</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">Rp 50.000</span>
+                            <span class="text-sm text-gray-500">/bulan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-film text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Netflix Premium</h3>
+                        <p class="text-gray-600 mb-4">Streaming film dan series tanpa batas</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">Rp 120.000</span>
+                            <span class="text-sm text-gray-500">/bulan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                        <i class="fab fa-youtube text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">YouTube Premium</h3>
+                        <p class="text-gray-600 mb-4">Tonton video tanpa iklan dan download offline</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">Rp 65.000</span>
+                            <span class="text-sm text-gray-500">/bulan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center">
+                        <i class="fas fa-cloud text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Google Drive</h3>
+                        <p class="text-gray-600 mb-4">Penyimpanan cloud dengan kapasitas besar</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary">Rp 75.000</span>
+                            <span class="text-sm text-gray-500">/bulan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button onclick="window.location.href='products.html'" 
+                        class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition-all duration-300">
+                    Lihat Semua Produk <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Metode Pembayaran
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Berbagai metode pembayaran yang kami dukung
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <img src="https://placehold.co/100x100" alt="Logo DANA digital wallet dengan warna ungu dan putih" class="mx-auto mb-4 h-16 w-16 object-contain">
+                    <h3 class="font-semibold">DANA</h3>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <img src="https://placehold.co/100x100" alt="Logo OVO digital wallet dengan warna biru dan putih" class="mx-auto mb-4 h-16 w-16 object-contain">
+                    <h3 class="font-semibold">OVO</h3>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <img src="https://placehold.co/100x100" alt="Logo GoPay digital wallet dengan warna hijau dan putih" class="mx-auto mb-4 h-16 w-16 object-contain">
+                    <h3 class="font-semibold">GoPay</h3>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <img src="https://placehold.co/100x100" alt="QRIS code payment system logo dengan pola khas Indonesia" class="mx-auto mb-4 h-16 w-16 object-contain">
+                    <h3 class="font-semibold">QRIS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><i class="fas fa-rocket mr-2"></i>Upstore</h3>
+                    <p class="text-gray-400">Layanan upgrade premium aplikasi terpercaya dengan proses otomatis dan cepat.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Spotify Premium</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Netflix Premium</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">YouTube Premium</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Google Drive</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigasi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#products" class="text-gray-400 hover:text-white">Produk</a></li>
+                        <li><a href="#history" class="text-gray-400 hover:text-white">Riwayat</a></li>
+                        <li><a href="#transactions" class="text-gray-400 hover:text-white">Transaksi</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i>support@upstore.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+62 812-3456-7890</p>
+                        <p><i class="fas fa-clock mr-2"></i>Support 24/7</p>
+                    </div>
+                </div
