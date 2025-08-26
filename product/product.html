@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upstore - Semua Produk</title>
+    <title>Upstore - Produk Premium APK</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -49,7 +49,7 @@
                         <a href="../dashboard/index.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
                             <i class="fas fa-home mr-1"></i>Beranda
                         </a>
-                        <a href="products.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                        <a href="#products" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
                             <i class="fas fa-box mr-1"></i>Produk
                         </a>
                         <a href="../history/purchase-history.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
@@ -70,10 +70,21 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
+                Produk Premium Terbaik
+            </h2>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">
+                Temukan aplikasi premium yang Anda butuhkan untuk pengalaman terbaik.
+            </p>
+        </div>
+    </section>
+
     <!-- Products Section -->
-    <section class="py-16 bg-white">
+    <section id="products" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-8 text-gray-900">Semua Produk</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Product 1 -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
@@ -149,9 +160,9 @@
             </div>
 
             <div class="text-center mt-12">
-                <button onclick="window.location.href='index.html'" 
+                <button onclick="window.location.href='products.html'" 
                         class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition-all duration-300">
-                    Kembali ke Beranda <i class="fas fa-arrow-left ml-2"></i>
+                    Lihat Semua Produk <i class="fas fa-arrow-right ml-2"></i>
                 </button>
             </div>
         </div>
@@ -168,17 +179,17 @@
                 <div>
                     <h4 class="font-semibold mb-4">Layanan</h4>
                     <ul class="space-y-2">
-                        <li><a href="spotifyprem.html" class="text-gray-400 hover:text-white">Spotify Premium</a></li>
-                        <li><a href="netflixprem.html" class="text-gray-400 hover:text-white">Netflix Premium</a></li>
-                        <li><a href="youtubeprem.html" class="text-gray-400 hover:text-white">YouTube Premium</a></li>
-                        <li><a href="googledrive.html" class="text-gray-400 hover:text-white">Google Drive</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Spotify Premium</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Netflix Premium</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">YouTube Premium</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Google Drive</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Navigasi</h4>
                     <ul class="space-y-2">
                         <li><a href="../dashboard/index.html" class="text-gray-400 hover:text-white">Beranda</a></li>
-                        <li><a href="products.html" class="text-gray-400 hover:text-white">Produk</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white">Produk</a></li>
                         <li><a href="../history/purchase-history.html" class="text-gray-400 hover:text-white">Riwayat</a></li>
                         <li><a href="../transactions/transaction-history.html" class="text-gray-400 hover:text-white">Transaksi</a></li>
                     </ul>
