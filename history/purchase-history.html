@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upstore - Riwayat Pembelian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        accent: '#F59E0B'
+                    }
+                }
+            }
+        }
+
+        // Sample purchase history data
+        const purchaseHistory = [
+            {
+                date: "01/01/2023",
+                product: "Spotify Premium",
+                price: "Rp 50.000",
+                status: "Aktif"
+            },
+            {
+                date: "15/01/2023",
+                product: "Netflix Premium",
+                price: "Rp 120.000",
+                status: "Aktif"
+            },
+            {
+                date: "20/01/2023",
+                product: "YouTube Premium",
+                price: "Rp 65.000",
+                status: "Dibatalkan"
+            },
+            {
+                date: "25/01/2023",
+                product: "Google Drive",
+                price: "Rp 75.000",
+                status: "Aktif"
+            },
+            {
+                date: "30/01/2023",
+                product: "Video Premium",
+                price: "Rp 80.000",
+                status: "Aktif"
+            }
+        ];
+
+        // Function to render purchase history
+        function renderPurchaseHistory() {
+            const tableBody = document.getElementById('purchase-history-body');
+            tableBody.innerHTML = ''; // Clear existing content
+
+            purchaseHistory.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="py-3 px-4 border-b text-sm text-gray-700">${item.date}</td>
+                    <td class="py-3 px-4 border-b text-sm text-gray-700">${item.product}</td>
+                    <td class="py-3 px-4 border-b text-sm text-gray-700">${item.price}</td>
+                    <td class="py-3 px-4 border-b text-sm text-gray-700">${item.status}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Call the function to render purchase history on page load
+        window.onload = renderPurchaseHistory;
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">
+                            <i class="fas fa-rocket mr-2"></i>Upstore
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../dashboard/index.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-home mr-1"></i>Beranda
+                        </a>
+                        <a href="../products.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-box mr-1"></i>Produk
+                        </a>
+                        <a href="purchase-history.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-history mr-1"></i>Riwayat
+                        </a>
+                        <a href="../transactions/transaction-history.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-receipt mr-1"></i>Transaksi
+                        </a>
+                        <a href="../contact/contact.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-phone mr-1"></i>Kontak
+                        </a>
+                        <a href="../about/about.html" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            <i class="fas fa-info-circle mr-1"></i>Tentang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Purchase History Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-900">Riwayat Pembelian</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="py-3 px-4 border-b text-left text-sm font-medium text-gray-600">Tanggal</th>
+                            <th class="py-3 px-4 border-b text-left text-sm font-medium text-gray-600">Produk</th>
+                            <th class="py-3 px-4 border-b text-left text-sm font-medium text-gray-600">Harga</th>
+                            <th class="py-3 px-4 border-b text-left text-sm font-medium text-gray-600">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="purchase-history-body">
+                        <!-- Purchase history will be rendered here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center mt-12">
+                <button onclick="window.location.href='../dashboard/index.html'" 
+                        class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition-all duration-300">
+                    Kembali ke Beranda <i class="fas fa-arrow-left ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><i class="fas fa-rocket mr-2"></i>Upstore</h3>
+                    <p class="text-gray-400">Layanan upgrade premium aplikasi terpercaya dengan proses otomatis dan cepat.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white">Spotify Premium</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white">Netflix Premium</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white">YouTube Premium</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white">Google Drive</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white">Video Premium</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white">Telegram Premium</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white">Bstation Premium</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigasi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../dashboard/index.html" class="text-gray-400 hover:text-white">Beranda</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-white">Produk</a></li>
+                        <li><a href="purchase-history.html" class="text-gray-400 hover:text-white">Riwayat</a></li>
+                        <li><a href="../transactions/transaction-history.html" class="text-gray-400 hover:text-white">Transaksi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i>support@upstore.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+62 812-3456-7890</p>
+                        <p><i class="fas fa-clock mr-2"></i>Support 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
